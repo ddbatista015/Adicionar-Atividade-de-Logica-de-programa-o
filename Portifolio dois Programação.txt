@@ -1,0 +1,202 @@
+Exercício 1 – Calculadora (Estrutura escolha)
+
+
+
+algoritmo "calculadora"
+
+
+
+var
+
+numero1, numero2, resultado: real
+
+opcao: inteiro
+
+
+
+inicio
+
+escreval("=== CALCULADORA ===")
+
+
+
+escreva("Digite o primeiro número: ")
+
+leia(numero1)
+
+
+
+escreva("Digite o segundo número: ")
+
+leia(numero2)
+
+
+
+escreval("")
+
+escreval("1 - Soma")
+
+escreval("2 - Subtração")
+
+escreval("3 - Multiplicação")
+
+escreval("4 - Divisão")
+
+
+
+escreva("Escolha uma operação: ")
+
+leia(opcao)
+
+
+
+escolha opcao
+
+
+
+  caso 1
+
+     resultado <- numero1 + numero2
+
+     escreval("Resultado: ", resultado)
+
+
+
+  caso 2
+
+     resultado <- numero1 - numero2
+
+     escreval("Resultado: ", resultado)
+
+
+
+  caso 3
+
+     resultado <- numero1 * numero2
+
+     escreval("Resultado: ", resultado)
+
+
+
+  caso 4
+
+     // Impede divisão por zero
+
+     se numero2 <> 0 entao
+
+        resultado <- numero1 / numero2
+
+        escreval("Resultado: ", resultado)
+
+     senao
+
+        escreval("Erro: não é possível dividir por zero!")
+
+     fimse
+
+
+
+  outrocaso
+
+     escreval("Opção inválida!")
+
+
+
+fimescolha
+
+
+
+fimalgoritmo
+
+
+
+
+
+Exercício 2 – Tabuada (Estrutura para)
+
+
+
+algoritmo "tabuada"
+
+
+
+var
+
+numero, contador: inteiro
+
+
+
+inicio
+
+escreva("Digite um número inteiro positivo: ")
+
+leia(numero)
+
+
+
+escreval("")
+
+escreval("Tabuada do ", numero)
+
+
+
+para contador de 1 ate 10 faca
+
+escreval(numero, " x ", contador, " = ", numero * contador)
+
+fimpara
+
+
+
+fimalgoritmo
+
+
+
+
+
+Exercício 3 – Sistema de Login (Estrutura enquanto)
+
+
+
+algoritmo "login"
+
+
+
+var
+
+senhaCorreta, senhaDigitada: caractere
+
+
+
+inicio
+
+senhaCorreta <- "senha123"
+
+
+
+escreva("Digite a senha: ")
+
+leia(senhaDigitada)
+
+
+
+enquanto senhaDigitada <> senhaCorreta faca
+
+escreval("Senha incorreta, tente novamente.")
+
+escreva("Digite a senha: ")
+
+leia(senhaDigitada)
+
+fimenquanto
+
+
+
+escreval("Acesso Liberado! Bem-vindo!")
+
+
+
+fimalgoritmo
+
+
+
